@@ -52,8 +52,8 @@ public class huhh:MonoBehaviour
         body.velocity=m_velocity*m_speedModifier;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("hey");
-    }
+    // void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     Debug.Log("hey");
+    // }
 }
