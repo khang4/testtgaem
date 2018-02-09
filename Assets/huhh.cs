@@ -27,14 +27,24 @@ public class huhh:MonoBehaviour
 
         m_velocity.Set(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
 
-        if (body.position.x>18 && m_velocity.x>0)
+        if (body.position.x>0 && m_velocity.x>0)
         {
             m_velocity.x=0;
         }
 
-        if (body.position.x<-18 && m_velocity.x<0)
+        else if (body.position.x<-15 && m_velocity.x<0)
         {
             m_velocity.x=0;
+        }
+
+        if (body.position.y>7 && m_velocity.y>0)
+        {
+            m_velocity.y=0;
+        }
+
+        else if (body.position.y<-7 && m_velocity.y<0)
+        {
+            m_velocity.y=0;
         }
 
         m_velocity.Normalize();
