@@ -51,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\bulletCatcher.cs" />
-     <Compile Include="Assets\fbullet_a.cs" />
-     <Compile Include="Assets\FbulletB.cs" />
-     <Compile Include="Assets\huhh.cs" />
+     <Compile Include="Assets\aagun\aaBulletA.cs" />
+     <Compile Include="Assets\aagun\aagun.cs" />
+     <Compile Include="Assets\bulletcatcher\bulletCatcher.cs" />
+     <Compile Include="Assets\fbullet\fbullet_a.cs" />
+     <Compile Include="Assets\fbullet\FbulletB.cs" />
+     <Compile Include="Assets\other\huhh.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/khang/Documents/pentbox/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
