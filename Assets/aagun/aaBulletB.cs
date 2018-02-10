@@ -18,9 +18,9 @@ public class aaBulletB:MonoBehaviour
         transform.Translate(m_direction*m_speed);
     }
 
-    public void setDirection(float[] direction)
+    public void setDirection(Vector2 direction)
     {
-        m_direction=new Vector2(direction[0],direction[1]);
+        m_direction=direction;
     }
 
     void OnTriggerEnter2D(Collider2D trigger)

@@ -11,6 +11,8 @@ public class aaBulletA:MonoBehaviour
     float m_minVelocity=.01f;
     float m_decceleration=.01f;
 
+    int m_betaBulletsFired=10;
+
     public GameObject aaBulletB;
 
     // float m_spawnTime;
@@ -45,24 +47,14 @@ public class aaBulletA:MonoBehaviour
 
     void explode()
     {
-        GameObject newBullet;
-        aaBulletB bulletComp;
+        Vector2 direction=Random.insideUnitCircle;
+        float angle=360/m_betaBulletsFired;
 
-        newBullet=Instantiate(aaBulletB,transform.position,new Quaternion()) as GameObject;
-        bulletComp=newBullet.GetComponent<aaBulletB>();
-        bulletComp.setDirection(new float[2]{0,1});
-
-        newBullet=Instantiate(aaBulletB,transform.position,new Quaternion()) as GameObject;
-        bulletComp=newBullet.GetComponent<aaBulletB>();
-        bulletComp.setDirection(new float[2]{0,-1});
-
-        newBullet=Instantiate(aaBulletB,transform.position,new Quaternion()) as GameObject;
-        bulletComp=newBullet.GetComponent<aaBulletB>();
-        bulletComp.setDirection(new float[2]{1,0});
-
-        newBullet=Instantiate(aaBulletB,transform.position,new Quaternion()) as GameObject;
-        bulletComp=newBullet.GetComponent<aaBulletB>();
-        bulletComp.setDirection(new float[2]{-1,0});
+        for (int x=0;x<m_betaBulletsFired;x++)
+        {
+            direction=Quaternion.Euler(0,0,angle)*direction;
+            Instantiate(aaBulletB,transform.position,new Quaternion()).GetComponent<aaBulletB>().setDirection(direction);
+        }
 
         Destroy(this.gameObject);
     }
