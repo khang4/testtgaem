@@ -11,7 +11,7 @@ public class aaBulletA:MonoBehaviour
     float m_minVelocity=.01f;
     float m_decceleration=.01f;
 
-    int m_betaBulletsFired=10;
+    int[] m_bulletsFired={8,10}; //give min and max bullets to be fired during explosion
 
     public GameObject aaBulletB;
 
@@ -48,9 +48,10 @@ public class aaBulletA:MonoBehaviour
     void explode()
     {
         Vector2 direction=Random.insideUnitCircle;
-        float angle=360/m_betaBulletsFired;
+        int bulletsFired=Random.Range(m_bulletsFired[0],m_bulletsFired[1]);
+        float angle=360/bulletsFired;
 
-        for (int x=0;x<m_betaBulletsFired;x++)
+        for (int x=0;x<bulletsFired;x++)
         {
             direction=Quaternion.Euler(0,0,angle)*direction;
             Instantiate(aaBulletB,transform.position,new Quaternion()).GetComponent<aaBulletB>().setDirection(direction);
