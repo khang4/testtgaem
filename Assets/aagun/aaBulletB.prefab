@@ -9,57 +9,73 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1432411143782122}
+  m_RootGameObject: {fileID: 1717905466258862}
   m_IsPrefabParent: 1
---- !u!1 &1432411143782122
+--- !u!1 &1717905466258862
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4055048336305922}
-  - component: {fileID: 212275956816535146}
-  - component: {fileID: 114140762294988434}
+  - component: {fileID: 4933865059519156}
+  - component: {fileID: 212426582545897378}
+  - component: {fileID: 114659186300420124}
+  - component: {fileID: 58670256824630398}
   m_Layer: 0
-  m_Name: aaGun
+  m_Name: aaBulletB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4055048336305922
+--- !u!4 &4933865059519156
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1432411143782122}
+  m_GameObject: {fileID: 1717905466258862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.96, y: -4.6, z: -0.29296875}
-  m_LocalScale: {x: 0.555257, y: 0.555257, z: 0.555257}
+  m_LocalPosition: {x: -3.5549, y: -2.0930915, z: 0}
+  m_LocalScale: {x: 0.25543872, y: 0.26941985, z: 0.26941985}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114140762294988434
+--- !u!58 &58670256824630398
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717905466258862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05839623, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.22005104
+--- !u!114 &114659186300420124
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1432411143782122}
+  m_GameObject: {fileID: 1717905466258862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 681d48401f64f3b47b575458644d932e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2924301d3a5f532428475694b90c5268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aaBulletA: {fileID: 1503333522170420, guid: 369e1a70799e109418a839d7dea60274, type: 2}
-  m_firerate: 3
---- !u!212 &212275956816535146
+  m_direction: {x: 0, y: 0}
+  m_speed: 0.1
+--- !u!212 &212426582545897378
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1432411143782122}
+  m_GameObject: {fileID: 1717905466258862}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -88,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e54194c1308583469f4abc3807fc136, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49d6dccc3d80a424d94f66955dae62a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

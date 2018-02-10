@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\aagun\aaBulletA.cs" />
+     <Compile Include="Assets\aagun\aaBulletB.cs" />
      <Compile Include="Assets\aagun\aagun.cs" />
      <Compile Include="Assets\bulletcatcher\bulletCatcher.cs" />
      <Compile Include="Assets\fbullet\fbullet_a.cs" />
