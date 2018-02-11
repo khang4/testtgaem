@@ -1,4 +1,4 @@
-public class className:MonoBehaviour
+public class :MonoBehaviour
 {
     void Start()
     {

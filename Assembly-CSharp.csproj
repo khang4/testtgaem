@@ -58,6 +58,8 @@
      <Compile Include="Assets\fbullet\fbullet_a.cs" />
      <Compile Include="Assets\fbullet\FbulletB.cs" />
      <Compile Include="Assets\other\huhh.cs" />
+     <Compile Include="Assets\trackerMissile\tmlauncher.cs" />
+     <Compile Include="Assets\trackerMissile\tmmissile.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/khang/Documents/pentbox/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
